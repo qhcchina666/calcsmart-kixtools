@@ -1,7 +1,7 @@
 /* QHC i18n */
 const T = {
   // Global
-  siteName: { zh: 'QHC 智算', en: 'QHC' },
+  siteName: { zh: 'QHC 智算', en: 'QHC Smartcalc' },
   home: { zh: '首页', en: 'Home' },
   mortgage: { zh: '房贷计算器', en: 'Mortgage' },
   tax: { zh: '个税计算器', en: 'Tax' },
