@@ -1,7 +1,7 @@
-/* CalcSmart i18n */
+/* QHC i18n */
 const T = {
   // Global
-  siteName: { zh: 'CalcSmart 智算', en: 'CalcSmart' },
+  siteName: { zh: 'QHC 智算', en: 'QHC' },
   home: { zh: '首页', en: 'Home' },
   mortgage: { zh: '房贷计算器', en: 'Mortgage' },
   tax: { zh: '个税计算器', en: 'Tax' },
@@ -12,10 +12,10 @@ const T = {
   reset: { zh: '重置', en: 'Reset' },
   donateTip: { zh: '☕ 觉得好用？打赏一杯咖啡', en: '☕ Find it useful? Buy me a coffee' },
   donateAddr: { zh: 'Tron/USDT 打赏地址:', en: 'Tron/USDT Tip:' },
-  footer: { zh: '© 2026 CalcSmart · 免费在线计算器｜由KixTools提供', en: '© 2026 CalcSmart · Free Online Calculators | Powered by KixTools' },
+  footer: { zh: '© 2026 QHC · 免费在线计算器｜由KixTools提供', en: '© 2026 QHC · Free Online Calculators | Powered by KixTools' },
 
   // Index
-  indexTitle: { zh: 'CalcSmart智算 - 多功能免费在线计算器大全', en: 'CalcSmart - Free Online Calculators & Tools' },
+  indexTitle: { zh: 'QHC智算 - 多功能免费在线计算器大全', en: 'QHC - Free Online Calculators & Tools' },
   indexSub: { zh: '免费一站式在线计算集合，支持房贷、个税、税后工资、利息、BMI、单位换算、面积、电费、AA分账等常用计算', en: 'Free one-stop online calculators: mortgage, tax, salary, interest, BMI, unit converter, area, power, bill split and more' },
   mortgageDesc: { zh: '等额本息/等额本金，月供与还款明细', en: 'Monthly payment, total interest, amortization' },
   taxDesc: { zh: '2026中国个税，专项扣除，到手工资', en: 'China income tax with deductions' },
@@ -126,7 +126,7 @@ function renderHeader(active) {
     ['bmi.html', 'bmi'], ['unit.html', 'unit'], ['countdown.html', 'countdown']
   ];
   return `<header class="header"><div class="header-inner">
-    <a href="index.html" class="logo">⚡ <span data-t="siteName">CalcSmart</span></a>
+    <a href="index.html" class="logo">⚡ <span data-t="siteName">QHC</span></a>
     <button class="nav-toggle" onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
     <nav class="nav">${nav.map(([h,k])=>`<a href="${h}" class="${active===k?'active':''}" data-t="${k}">${t(k)}</a>`).join('')}
     <button class="lang-btn" onclick="toggleLang()">🌐 ${lang==='zh'?'EN':'中文'}</button></nav>
@@ -135,7 +135,7 @@ function renderHeader(active) {
 
 function renderFooter() {
   return `<div class="donate"><p data-t="donateTip">${t('donateTip')}</p><p><span data-t="donateAddr">${t('donateAddr')}</span> <code>TEdwRKtNa1qyLLDGb6dGEdhLgDYnDBMF1c</code></p></div>
-  <footer class="footer">© 2026 CalcSmart · 免费在线计算器｜由<a href="https://kixtools.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer>`;
+  <footer class="footer">© 2026 QHC · 免费在线计算器｜由<a href="https://kixtools.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">KixTools</a>提供</footer>`;
 }
 
 function fmt(n) { return n.toLocaleString('zh-CN', {minimumFractionDigits:2, maximumFractionDigits:2}); }
